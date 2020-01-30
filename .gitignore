@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+npm-debug.log
+.nyc_output
+coverage
+node_modules
+.idea
+dist
+.chrome
+yarn.lock
+yarn-error.log
+package-lock.json

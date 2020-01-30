@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@import "~bulma/bulma.sass";
+
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
