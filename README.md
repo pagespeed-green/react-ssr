@@ -1,6 +1,8 @@
-# Boosting React App performance with SSR and Rust
+# React Server Side Rendering Setup
 
-Original article: 
+This is a complete example for the article:  
+
+[How To Improve React App Performance with SSR and Rust [Part I: SSR]](https://hackernoon.com/how-to-improve-react-app-performance-with-ssr-and-rust-part-i-ssr-b75x36ed)
 
 ## Run app locally
 
