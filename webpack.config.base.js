@@ -59,7 +59,7 @@ module.exports = function base(isDebug, target) {
           use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'],
         },
         {
-          test: /\.(jpe?g|png|gif|svg)$/i,
+          test: /\.(jpe?g|png|gif|svg|webp)$/i,
           loader: 'file-loader',
           options: {
             name() {
