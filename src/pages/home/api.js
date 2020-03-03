@@ -14,7 +14,7 @@ import obiKenobi from '../../public/images/obi-kenobi.jpg';
 import oola from '../../public/images/Oola.jpg';
 import padmeAmidala from '../../public/images/Padme-Amidala.jpg';
 import qira from '../../public/images/qira.jpg';
-import r2d2 from '../../public/images/R2D2.webp';
+import r2d2 from '../../public/images/R2D2.jpg';
 import rey from '../../public/images/rey.jpg';
 import rodian from '../../public/images/Rodian.jpg';
 import sebulba from '../../public/images/Sebulba.jpg';
