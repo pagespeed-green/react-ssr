@@ -25,7 +25,8 @@
     "react-hot-loader": "^4.12.11",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "regenerator-runtime": "^0.13.3"
+    "regenerator-runtime": "^0.13.3",
+    "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",

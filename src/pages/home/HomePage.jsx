@@ -1,28 +1,78 @@
 import React, { useEffect, useState } from 'react';
+import zxcvbn from 'zxcvbn';
 
 import Article from '../../components/Article';
 import { getArticles } from './api';
+import posterImage from '../../public/images/poster.jpg';
 import './styles.scss';
 
+function getTopArticle(articles) {
+  const orderedArticles = [...articles].sort((a, b) => b.score - a.score);
+
+  return orderedArticles[0] || '';
+}
+
+const ARTICLES = getArticles();
+
 function HomePage() {
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState(ARTICLES);
   const [loading, setLoading] = useState(false);
+  const [temp, setTemp] = useState('');
 
   useEffect(() => {
-    async function asyncCall() {
-      setLoading(true);
-      const { payload } = await getArticles();
-      setArticles(payload);
-      setLoading(false);
-    }
-    asyncCall();
+    setLoading(true);
+    const parsedArticles = ARTICLES.map((item) => ({
+      ...item,
+      score: zxcvbn(item.title).score,
+    }));
+    setArticles(parsedArticles);
+    const t = [...Array(250).fill(250)].map(() => {
+      const str = JSON.stringify(parsedArticles);
+      return str;
+    });
+    setTemp(JSON.stringify(t));
+    setLoading(false);
+    const top = getTopArticle(parsedArticles);
+    const updatedArticles = parsedArticles.map((item) => ({
+      ...item,
+      isTop: item.title === top,
+    }));
+    setArticles(updatedArticles);
   }, []);
 
+  const onVoteHandler = (t) => {
+    const articlesChanged = articles.map((item) => {
+      if (item.title === t) {
+        return {
+          ...item,
+          score: item.score + 1,
+        };
+      }
+      return item;
+    });
+
+    const top = getTopArticle(articlesChanged);
+    const updatedArticles = articlesChanged.map((item) => ({
+      ...item,
+      isTop: item.title === top.title,
+    }));
+    setArticles(updatedArticles);
+  };
+
   return (
-    <div className="AboutPage__root container is-fluid">
-      <div className="notification">
-        <h1 className="title">Star Wars - be on the green side!</h1>
-        <p>
+    <div className="HomePage__root">
+      <div
+        className="notification"
+        style={{
+          backgroundImage: `url(${posterImage})`,
+          height: 480,
+          color: '#006aa2',
+          fontSize: 14,
+          marginTop: 20,
+        }}
+      >
+        <h1 className="title is-1">Star Wars - be on the green side!</h1>
+        <p style={{ color: 'white', fontSize: 24 }}>
           There are many reasons why George Lucas’ story of a young man, an evil Empire and a galaxy far,
           far away captured the imaginations of the generation who grew up on that original trilogy,
           and why it still reels in younger viewers weaned on prequels, sequels and other canonical spin-offs.
@@ -34,10 +84,19 @@ function HomePage() {
         {
           loading ? 'loading...'
             : articles.map((item) => (
-              <Article key={item.title} title={item.title} image={item.image} text={item.text} />
+              <Article
+                image={item.image}
+                key={item.title}
+                onVoteClick={onVoteHandler}
+                score={item.score}
+                text={item.text}
+                title={item.title}
+                isTop={item.isTop}
+              />
             ))
         }
       </div>
+      <div style={{ display: 'none' }}>{JSON.stringify(temp)}</div>
     </div>
   );
 }

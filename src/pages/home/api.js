@@ -30,6 +30,18 @@ import kyloRen from '../../public/images/kyloRen.jpg';
 import finn from '../../public/images/finn.jpg';
 import poeDameron from '../../public/images/poeDameron.jpg';
 
+import jangoFett from '../../public/images/jangoFett.jpg';
+import admiralMotti from '../../public/images/admiral-motti.jpg';
+import uncleOwen from '../../public/images/uncleOwen.jpg';
+import ddmiralFirmusPiett from '../../public/images/ddmiralFirmusPiett.jpg';
+import wedgeAntilles from '../../public/images/wedgeAntilles.jpg';
+import eV9D9 from '../../public/images/eV9D9.jpg';
+import monMothma from '../../public/images/monMothma.jpg';
+import dooku from '../../public/images/dooku.jpg';
+import enfysNest from '../../public/images/enfys-nest.jpg';
+import quiGonJinn from '../../public/images/QuiGonJinn.jpg';
+
+
 const ARTICLES = [
   {
     title: 'Rey',
@@ -180,12 +192,58 @@ const ARTICLES = [
     image: poeDameron,
     text: 'Hero, heartthrob, ace fighter pilot and half of the big-screen’s greatest bromance in years: Poe Dameron is all these things and more. The Resistance’s best X-wing pilot is played by none other than Llewyn Davis himself, Oscar Isaac, and kicks off the movie by defying Kylo Ren and conducting a daring escape. He’s the kind of guy who won’t just save his friend’s life; he’ll also give him the badass leather jacket right off his back. Don’t tell us that pat on the shoulder didn’t launch a thousand fanfics.',
   },
+  {
+    title: 'Jango Fett',
+    image: jangoFett,
+    text: 'He’s “just a simple man trying to make my way in the universe,” but Jango Fett is legion — literally. Through extensive cloning, the bounty hunter behind the blue Mandalorian armor is the basis not only for his better-known “son” Boba Fett, but for each and every trooper who gives Attack of the Clones its title. From his knock-down drag-out brawl with Obi-Wan to their high-speed asteroid-field chase to his decapitation by Mace Windu’s blade, he’s a key part of the film’s best action sequences. Kudos to Kiwi actor Temuera Morrison, who gives the character rough-hewn gangster gravitas.',
+  },
+  {
+    title: 'Admiral Motti',
+    image: admiralMotti,
+    text: 'For a guy sharp enough to work his way up to the position of admiral in the Imperial Fleet, you’d think Conan Antonio Motti would be bright enough to know that you don’t shit-talk Darth Vader to his metal face. His screen time is short, but he’s a pivotal character thanks to the way Darth totally posterizes him in A New Hope. Choking Motti from afar after he gets snippy questioning the power of the Force, Vader delivers a killer one-liner: “I find your lack of faith disturbing.” Cut scene we’d love to see: Motti then going to Human Resources to report an unsafe work environment.',
+  },
+  {
+    title: 'Uncle Owen',
+    image: uncleOwen,
+    text: 'Poor Owen Lars. All he ever wanted was a quiet life on Tatooine, farming moisture. But just because his widowed father happened to marry the mother of Darth freakin’ Vader, he was plagued by Jedi Knights, Tusken Raiders, and Imperial Stormtroopers. First introduced in A New Hope as Luke’s strict, humorless guardian, Uncle Owen is actually as much of a tragic figure as anybody in the franchise. He tries his best to keep his step-nephew safe from the violence and turmoil shattering the galaxy. He’s paid back in sass, disobedience, and an early grave.',
+  },
+  {
+    title: 'Admiral Firmus Piett',
+    image: ddmiralFirmusPiett,
+    text: 'From a certain point of view, The Empire Strikes Back can be seen as a dark workplace comedy in which Imperial officer Firmus Piett tries to do just enough right so that he’s not killed by Darth Vader. (Just ask Admiral Ozzel and Captain Needa, who both get the Dark-Side choke of death during the movie.) Played by character actor Kenneth Colley, Piett was a fan favorite because he seemed to embody the helpless walking-on-eggshells mentality a lot of us have dealt with when we’re working for a real diva of a boss.',
+  },
+  {
+    title: 'Wedge Antilles',
+    image: wedgeAntilles,
+    text: 'Amid all the praise for Luke, Han and the rest of the Rebel Alliance, Wedge has never gotten his due, serving as a pilot in all three critical battles during the original trilogy — the two Death Stars and the AT-AT showdown on Hoth — and acquitting himself heroically every time. If the universe had an award comparable to the NBA’s Sixth Man of the Year — i.e. the best player off the bench — the man would have won it, doing all the hard work for the Rebellion but never enjoying the spotlight. Maybe that’s why the actor who played him, Denis Lawson, turned down a part in The Force Awakens: He’s tired of being a glorified extra. ',
+  },
+  {
+    title: 'EV-9D9',
+    image: eV9D9,
+    text: 'Working for Jabba probably sucks, which explains EV-9D9’s utterly cruddy attitude in Return of the Jedi (that’s him in the center of the pic). Supervising the mechanical-help deployment in Jabba’s lair and sail barge, he’s surely always in need of fresh hires, considering that his boss has an irritating habit of disintegrating droids that displease him. Of the robots we encounter in the Star Wars universe, he’s probably the surliest, not caring one bit about Threepio’s friendly chitchat or putting up with Artoo’s feistiness. (The character was voiced by Return director Richard Marquand, who died four years after the film’s release.) ',
+  },
+  {
+    title: 'Mon Mothma',
+    image: monMothma,
+    text: 'A key to Star Wars‘ success is its timelessness, but take one look at Caroline Blakiston’s Eighties sci-fi hair and gown as Mom Mothma in Return of the Jedi and you’d think she just took off her cushioned headphones playing Journey before walking on set. The Rebel Alliance bigwig delivers one of the biggest guilt-trips in all of the series — “Many Bothans died to bring us this information” — which doubles as a rebuke to audience members who thought all this blaster fire was just fun-and-games. A younger version played by Genevieve O’Reilly was seen (but not heard) in Revenge of the Sith, wearing a metal headpiece that echoes Princess Leia’s hair buns.',
+  },
+  {
+    title: 'Count Dooku',
+    image: dooku,
+    text: 'Forgive Count Dooku’s dismal name; even his Sith alias, Darth Tyranus, inspires shrugs more than fear. But embrace Christopher Lee, who brings this master swordsman of the one-percent to life with the technicolor gravitas of Hammer horror. Dooku’s best machinations as a Separatist leader take place off screen; Lee’s Middle-Earth training means his lightsaber skills, however, are devastating. The Count’s final battle with Anakin and Obi-Wan is among the best action sequences of the Prequels, and his death — a vicious execution at the hands of greasy-haired Anakin — is a key moment in the young Jedi’s fall to the dark side.',
+  },
+  {
+    title: 'Enfys Nest',
+    image: enfysNest,
+    text: 'Looking like a cross between Kylo Ren and a crazed buzzard, the black-clad marauder called Enfys Nest is a terrifying presence as Solo picks up steam, leading a clan of Cloud-Rider sky pirates in daring, deadly raids against Han’s criminal crew. But this fascinating character is more than he – or rather, she  – seems at first glance. Nest is actually a teenage girl (played by newcomer Erin Kellyman) who’s assembled her own rebel alliance of aliens, all of whom have been victimized by the crime syndicates Solo and his comrades have been forced to serve. Under her leadership, they’ve started to fight back. Han’s decision to help her out rather than sell her out is a major step on his road to the Rebellion – and, hopefully, just our first glimpse of an incredibly cool new character.',
+  },
+  {
+    title: 'Qui-Gon Jinn',
+    image: quiGonJinn,
+    text: 'All the scorn heaped on The Phantom Menace obscures how good Liam Neeson is as an honorable Jedi knight who mentors young Obi-Wan (Ewan McGregor) in the ways of the Force. In Qui-Gon Jinn, we can see the wise-elder warrior that Kenobi would grow to become, and Neeson (who had yet to make the transition to avenging-angel action star) brought just the right amount of Zen gravitas to his ass-kicking role. Although the prequels were about Anakin’s character arc, the first installment really belongs to this character, who’s trying to maintain a fragile peace across the galaxy while unseen forces are conspiring to tear it apart. That’s what makes his death at the hands of Darth Maul especially tragic: It’s not just Qui-Gon who’s dying but also his era’s sense of nobility.',
+  },
 ];
 
 export function getArticles() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({ payload: ARTICLES });
-    }, 500);
-  });
+  return ARTICLES;
 }
